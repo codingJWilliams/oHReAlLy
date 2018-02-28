@@ -1,4 +1,5 @@
 const login = require("facebook-chat-api");
+const creds = require("./creds.json")
 var Imgflipper = require("imgflipper");
 var http = require("http")
 var imgflipper = new Imgflipper(creds.imgflip, creds.pw);
