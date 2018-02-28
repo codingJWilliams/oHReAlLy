@@ -9,7 +9,7 @@ login({ email: creds.email, password: creds.pw }, (err, api) => {
     if (err) return console.error(err);
 
     api.listen((err, message) => {
-        //if (message.threadID !== "1813947025313467") return;
+        if (message.threadID !== "1813947025313467") return;
         var text = message.body;
         if (message.body != "!") lastMessage = message.body;
         if (message.body != "!") return;
